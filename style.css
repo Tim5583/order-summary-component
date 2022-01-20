@@ -1,0 +1,141 @@
+:root {
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 370px;
+    text-align: center;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#main-img {
+    width: 100%;
+}
+
+.main-dis {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.header {
+    font-size: 1.4rem;
+}
+
+.dis {
+    color: var(--Desaturated-blue);
+    margin: 1rem 0;
+}
+
+/* price box  */
+.price-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--Very-pale-blue);
+    padding: 1rem;
+}
+
+#main {
+    display: flex;
+}
+
+#music-img {
+    width: 40px;
+    margin-right: 0.8rem;
+}
+
+.plan p:first-child {
+    font-weight: 700;
+}
+
+.plan p:last-child {
+    color: var(--Desaturated-blue)
+}
+
+.price-change-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.price-change:hover {
+    color: var(--Bright-blue);
+}
+
+/* buttons  */
+input {
+    width: 100%;
+    display: block;
+    padding: .8em;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.payment-btn {
+    background-color: var(--Bright-blue);
+    color: #fff;
+}
+
+.cancel-btn {
+    color: var(--Desaturated-blue);
+    background-color: #fff;
+}
+
+.payment-btn:hover, .cancel-btn:hover, .price-change:hover{
+    cursor: pointer;
+}
+
+.payment-btn:hover {
+    background-color: hsl(237, 64%, 60%);
+}
+
+.cancel-btn:hover {
+    color: #000;
+}
+
+/* attribution  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+}
