@@ -16,6 +16,8 @@
 
 ## My process
 
+- [live-URL](https://summary-order-component.netlify.app/)
+
 ### Built with
 
 - Semantic HTML5 markup
